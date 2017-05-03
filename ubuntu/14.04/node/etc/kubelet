@@ -1,0 +1,2 @@
+KUBELET_OPTS="--hostname-override=pn1  --api-servers=http://10.1.70.132:8080 --register-schedulable=true --register-node=true --logtostderr=true  --cluster-dns=192.168.3.10 --cluster-domain=focus.local --allow-privileged=false --node-labels role=edge-router"
+#KUBELET_OPTS="--hostname-override=n2  --api-servers=http://m1:8080 --register-schedulable=false --register-node=true --logtostderr=true  --cluster-dns=192.168.3.10 --cluster-domain=cluster.local --allow-privileged=false --node-labels role=edge-router"

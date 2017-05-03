@@ -1,0 +1,19 @@
+ETCD_OPTS=" 
+--name infra0 \
+  
+--listen-peer-urls http://10.1.70.132:2380 \
+--initial-advertise-peer-urls http://10.1.70.132:2380 \
+
+  
+--listen-client-urls http://10.1.70.132:2379,http://127.0.0.1:2379 \
+--advertise-client-urls http://10.1.70.132:2379 \
+
+
+ 
+--initial-cluster-token etcd-cluster-1 \
+--initial-cluster infra0=http://10.1.70.132:2380,infra1=http://10.1.70.133:2380,infra=http://10.1.70.134:2380 \
+--initial-cluster-state new \
+--heartbeat-interval 250 \
+--election-timeout 1250"
+
+

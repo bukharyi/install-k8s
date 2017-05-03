@@ -1,0 +1,1 @@
+FLANNEL_OPTS="--etcd-endpoints=http://10.1.70.132:2379,http://10.1.70.133:2379,http://10.1.70.134:2379 --ip-masq  --iface=10.1.70.132"
